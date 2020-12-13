@@ -10,7 +10,7 @@
         <section th:fragment="listadoClientes" id="clientes">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col">
                         <div class="card">
                             <div class="card-header">
                                 <h4>[[#{persona.titulo-lista}]]</h4>
@@ -57,7 +57,12 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-12">
+                        <br/>
+                        <br/>
+                    </div>
+
+                    <div class="col-md-6">
                         <div class="card text-center bg-danger text-white mb-3">
                             <div class="card-body">
                                 <h3 th:text="#{persona.saldoTotal}">Saldo total</h3>
@@ -66,6 +71,8 @@
                                 </h4>
                             </div>
                         </div>
+                        </div>
+                        <div class="col-md-6">
                         <div class="card text-center bg-success text-white mb-3">
                             <div class="card-body">
                                 <h3 th:text="#{persona.totalClientes}">Total Clientes</h3>
